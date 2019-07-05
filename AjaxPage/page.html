@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax分页</title>
+    <style type="text/css">
+        h1{
+            text-align: center;
+            height: 50px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function ajax(url) {
+            var Oajax = new XMLHttpRequest();
+            var info = Oajax.value;
+            //    编码
+            info = encodeURIComponent(info);
+            var Oajax = new XMLHttpRequest();
+            Oajax.onreadystatechange = function () {
+                if (Oajax.readyState ==4 && Oajax.status ==200){
+                    document.getElementById('box').innerHTML = Oajax.responseText;
+                }
+            }
+            Oajax.open('GET',url,true);
+            Oajax.send();
+        }
+        window.onload = function () {
+            ajax('page.php');
+        }
+    </script>
+</head>
+<body>
+<h1>Ajax分页</h1>
+<div id="box"></div>
+</body>
+</html>
