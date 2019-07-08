@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招聘分类</title>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                type:"script",
+                url:"category_job.php",
+                data:'',
+                success:function (data) {
+                    $('#box').html(data);
+
+                }
+            });
+        });
+        // function page(url) {
+        //     //创建对象
+        //     var ajax = new XMLHttpRequest();
+        //     var info = ajax.value;
+        //     //编码
+        //     info = encodeURIComponent(info);
+        //     //    获取
+        //     ajax.onreadystatechange = function () {
+        //         if (ajax.readyState==4 && ajax.status ==200){
+        //             document.getElementById('box').innerHTML = ajax.responseText;
+        //         }
+        //     }
+        //     //    打开请求
+        //     ajax.open('GET',url,true);
+        //     //    发送请求
+        //     ajax.send();
+        // }
+        // window.onload=function () {
+        //     page('category_job.php');
+        // }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

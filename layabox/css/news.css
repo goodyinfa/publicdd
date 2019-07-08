@@ -1,0 +1,121 @@
+/*导航栏样式*/
+#head>li:nth-child(4){
+    color: #fff;
+    background-color: #080808;
+}
+
+#new{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#new h3{
+    font-size: 30px;
+    font-family: '微软雅黑';
+    color: #ff6b08;
+    margin-bottom: 40px;
+}
+#new .new1-img{
+    width: 302px;
+    height: 180px;
+    background: url(../images/news1.png) no-repeat;
+    overflow: hidden;
+}
+#new .new2-img{
+    width: 302px;
+    height: 180px;
+    background: url(../images/news2.jpg) no-repeat;
+    overflow: hidden;
+}
+#new .new3-img{
+    width: 302px;
+    height: 180px;
+    background: url(../images/news3.jpg) no-repeat;
+    overflow: hidden;
+}
+#new .new1-img>p,
+#new .new2-img>p,
+#new .new3-img>p{
+    width: 302px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, .5);
+    font-family: '微软雅黑';
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-top: 136px;
+}
+#laya-news{
+    /* padding-bottom: 40px; */
+}
+#laya-news .new-html5{
+    width: 220px;
+    height: 140px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+#laya-news .news4{
+    background: url(../images/news1.png) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news5{
+    background: url(../images/news4.png) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news6{
+    background: url(../images/news5.png) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news7{
+    background: url(../images/news6.png) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news8{
+    background: url(../images/news7.jpg) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news9{
+    background: url(../images/news8.jpg) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news10{
+    background: url(../images/news9.jpg) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news11{
+    background: url(../images/news10.jpg) no-repeat 4px 5px/210px 128px;
+}
+#laya-news .news12{
+    background: url(../images/news11.jpg) no-repeat 4px 5px/210px 128px;
+}
+#laya-news h4{
+    font-size: 18px;
+    font-family: '微软雅黑';
+    color: #ff6900;
+}
+#laya-news .padding{
+    padding-bottom: 3px;
+}
+#laya-news .look-1{
+    width: 101px;
+    height: 34px;
+    border-radius: 34px;
+    background-color: #ff6900;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 10px;
+}
+#laya-news .look{
+    width: 101px;
+    height: 34px;
+    border-radius: 34px;
+    border: 1px solid #ff6900;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 10px;
+}
+#laya-news .look-1>a{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Adobe黑体';
+    text-decoration: none;
+}
+#laya-news .look>a{
+    font-size: 14px;
+    color: #ff6900;
+    font-family: 'Adobe黑体';
+    text-decoration: none;
+}

@@ -1,0 +1,117 @@
+.huaxian:last-of-type{
+    opacity: 0!important;
+}
+/*导航栏样式*/
+#head>li:last-child{
+    color: #fff;
+    background-color: #080808;
+}
+
+/* 公司简介 */
+#abstract{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+#abstract h2{
+    font-size: 36px;
+    font-family: '微软雅黑';
+}
+#abstract h3{
+    font-size: 21px;
+    font-weight: 100;
+    font-family: '微软雅黑';
+    margin-bottom: 20px;
+}
+#abstract p{
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+/* 招聘 */
+#recruit{
+    background-color: #8cc11f;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+#recruit h2{
+    color: #fff;
+    font-size: 36px;
+    font-family: '微软雅黑';
+    margin-bottom: 40px;
+}
+#recruit p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+#recruit .mail{
+    width: 220px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+#recruit .mail>a{
+    color: #8cc11f;
+    font-size:24px;
+    text-decoration: none;
+}
+/* 职位 */
+#vocation{
+    padding-top: 115px;
+    padding-bottom: 60px;
+}
+#vocation h3{
+    font-size: 25px;
+    color: #8cc11f;
+    margin-bottom: 20px;
+}
+#vocation dl>dt{
+    font-size: 18px;
+    font-weight: 500;
+}
+#vocation dl>dd{
+    text-indent: 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.cut-off{
+    width: 85%;
+    height: 2px;
+    background-color: #ccc;
+}
+.mar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#contact{
+    background-color: #f4f4f4;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+#contact h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#contact .cont{
+    width: 470px;
+    height: 100px;
+    background-color: #fff;
+    line-height: 100px;
+}
+#contact .cont:first-of-type{
+    margin-bottom: 10px;
+}
+#contact .cont:nth-of-type(2n-1){
+    margin-right: 10px;
+}
+#contact .cont:nth-of-type(2){
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}
+#contact .cont:nth-of-type(3){
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}

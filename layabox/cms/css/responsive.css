@@ -1,0 +1,531 @@
+/* Author: Louis Holladay
+ * Website: AdminDesigns.com
+ * Last Updated: 02/01/14 
+ * Copyright 2014 Admin Designs
+=================================================
+   VI. RESPONSIVE STYLES
+      A. Header
+	  B. Content
+	  C. Sidebar
+	  D. Dashboard.html
+	  	  
+* These styles control various aspects of the
+* site which benefit from being responsive 
+================================================= 
+ A. Header
+================================================= */
+@media (max-width: 565px) {
+  .navbar-brand {
+    display: none; } }
+@media (max-width: 665px) {
+  #topbar .breadcrumb {
+    float: none;
+    text-align: center; } }
+/*===============================================
+  B. Content
+================================================= */
+#content,
+#content:after,
+body.sidebar-collapsed #content,
+body.sidebar-collapsed #content:after {
+  margin-left: 40px;
+  left: 0px;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out; }
+
+#content > .container {
+  padding: 25px 13px 50px 15px; }
+
+/*===============================================
+  C. Sidebar
+================================================= */
+#sidebar.affix {
+  height: 100%; }
+
+#sidebar.affix > #sidebar-search + #sidebar-menu {
+  top: 52px;
+  bottom: 52px; }
+
+#sidebar.affix > #sidebar-menu,
+#sidebar.affix > #sidebar-search.hidden + #sidebar-menu {
+  overflow: visible;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 100%; }
+
+/* Sidebar Column */
+#sidebar,
+body.sidebar-collapsed #sidebar {
+  width: 40px;
+  position: absolute;
+  z-index: 1024;
+  background: #FFF;
+  transition: width .1s ease-out;
+  -webkit-transition: width .1s ease-out; }
+
+#sidebar:before,
+body.sidebar-collapsed #sidebar:before {
+  content: "";
+  position: fixed;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: -2;
+  background: #fff;
+  transition: width .1s ease-out;
+  -webkit-transition: width .1s ease-out; }
+
+/* Sidebar Search Form */
+#sidebar-search,
+body.sidebar-collapsed #sidebar-search {
+  text-shadow: 0 1px #ffffff;
+  border-color: #cccccc rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.18);
+  background-color: #f0f0f0;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff',endColorstr='#00ffffff',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  position: relative;
+  overflow: hidden;
+  padding: 12px 13px 0 12px;
+  height: 52px;
+  max-height: 52px;
+  border-bottom: 1px solid #d2d2d2; }
+
+#sidebar-search form,
+body.sidebar-collapsed #sidebar-search form {
+  display: none;
+  position: relative;
+  max-width: 170px;
+  float: left; }
+
+#sidebar-search form input.search-bar,
+body.sidebar-collapsed #sidebar-search form input.search-bar {
+  padding: 3px 8px;
+  height: 29px;
+  max-height: 30px;
+  color: #999;
+  font-size: 14px;
+  outline: none;
+  background: #fff; }
+
+#sidebar-search form .field-icon-right {
+  display: none;
+  color: #AAA;
+  font-size: 14px;
+  top: 6px; }
+
+/* Sidebar Collapse Toggle Button */
+.sidebar-toggle,
+body.sidebar-collapsed .sidebar-toggle {
+  text-shadow: 0 1px #ffffff;
+  border-color: #cccccc rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.18);
+  background-color: #f0f0f0;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff',endColorstr='#00ffffff',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  margin-right: -6px;
+  width: 28px;
+  cursor: pointer;
+  float: right;
+  height: 28px;
+  line-height: 25px;
+  font-size: 17px;
+  color: #AAA;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ddd; }
+
+/* Sidebar Navigation Menu */
+ul.sidebar-nav li {
+  margin: 0; }
+
+ul.sidebar-nav li a {
+  color: #777777; }
+
+ul.sidebar-nav > li > a,
+body.sidebar-collapsed ul.sidebar-nav > li > a {
+  text-shadow: 0 1px #ffffff;
+  border-color: #cccccc rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.18);
+  background-color: #f0f0f0;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff',endColorstr='#00ffffff',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  display: block;
+  text-decoration: none;
+  color: #777;
+  line-height: 45px;
+  min-height: 45px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #c9c9c9;
+  box-shadow: none; }
+
+/* Side Nav Icon */
+ul.sidebar-nav > li > a .glyphicons,
+body.sidebar-collapsed ul.sidebar-nav > li > a .glyphicons {
+  width: 40px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  float: left;
+  margin-right: 10px;
+  padding-right: 4px;
+  margin-left: 2px;
+  top: 0; }
+
+ul.sidebar-nav li.active > a .glyphicons {
+  color: #d9534f; }
+
+/* Align Title and Submenu together */
+ul.sidebar-nav .sidebar-title,
+ul.sidebar-nav ul.sub-nav,
+body.sidebar-collapsed ul.sidebar-nav .sidebar-title,
+body.sidebar-collapsed ul.sidebar-nav ul.sub-nav {
+  border: 1px solid #ccc; }
+
+/* Side Nav Title */
+ul.sidebar-nav > li > a .sidebar-title,
+body.sidebar-collapsed ul.sidebar-nav > li > a .sidebar-title {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  width: 200px;
+  left: 40px;
+  top: -1px;
+  text-indent: 20px;
+  height: 46px;
+  background: #CCC;
+  border: 1px solid #AAA;
+  text-shadow: none; }
+
+/* Side Nav Item Hovers */
+/* primary-menu item hover - disabled */
+ul.sidebar-nav > li > a:hover,
+body.sidebar-collapsed ul.sidebar-nav > li > a:hover {
+  /* background: #EEE; */ }
+
+/* sub-menu item hover */
+ul.sidebar-nav ul.sub-nav > li > a:hover {
+  background-color: #EEE; }
+
+/* Sub-Menu */
+ul.sidebar-nav ul.sub-nav,
+body.sidebar-collapsed ul.sidebar-nav ul.sub-nav {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  width: 200px;
+  left: 40px;
+  border: 1px solid #c9c9c9;
+  border-top: 0;
+  background-color: #fafafa; }
+
+ul.sidebar-nav ul.sub-nav > li > a,
+body.sidebar-collapsed ul.sidebar-nav ul.sub-nav > li > a {
+  padding: 12px 20px 12px 20px; }
+
+/* Sub Nav Icon */
+ul.sidebar-nav ul.sub-nav li span.glyphicons,
+body.sidebar-collapsed ul.sidebar-nav ul.sub-nav li span.glyphicons {
+  margin-right: 12px;
+  min-width: 15px;
+  min-height: 15px;
+  float: left; }
+
+ul.sidebar-nav ul.sub-nav > li > a:hover span.glyphicons,
+body.sidebar-collapsed ul.sidebar-nav ul.sub-nav > li > a:hover span.glyphicons {
+  color: #d9534f; }
+
+/* Side Nav Caret */
+ul.sidebar-nav > li > a span.caret,
+body.sidebar-collapsed ul.sidebar-nav > li > a span.caret {
+  display: none;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent; }
+
+/* Side Nav caret state - we simply flip caret(border) */
+ul.sidebar-nav > li > a.menu-open span.caret,
+body.sidebar-collapsed ul.sidebar-nav > li > a.menu-open span.caret {
+  border-top: 0;
+  border-bottom: 5px solid; }
+
+/* Side Nav active caret state */
+ul.sidebar-nav > li.active > a span.caret,
+body.sidebar-collapsed ul.sidebar-nav > li.active > a span.caret {
+  color: #d9534f; }
+
+/* Open both menu title and Sub-menu on hover */
+ul.sidebar-nav > li:hover > ul,
+ul.sidebar-nav > li:hover > a,
+ul.sidebar-nav > li:hover > a > .sidebar-title,
+body.sidebar-collapsed ul.sidebar-nav > li:hover > ul,
+body.sidebar-collapsed ul.sidebar-nav > li:hover > a,
+body.sidebar-collapsed ul.sidebar-nav > li:hover > a > .sidebar-title {
+  display: block; }
+
+/*  THIRD LEVEL NAVIGATION */
+/* Third Level Nav Caret */
+ul.sidebar-nav ul.sub-nav > li > a span.caret {
+  position: absolute;
+  right: 0;
+  margin: 8px 12px 5px; }
+
+/* Side Nav caret state - we simply flip caret(border) */
+ul.sidebar-nav ul.sub-nav > li > a.menu-open span.caret {
+  border-top: 0;
+  border-bottom: 5px solid; }
+
+/* Multi Level Nav Sub-Menu */
+ul.sidebar-nav ul.sub-nav > li > ul.sub-nav {
+  border-top: 1px solid #CCC;
+  left: -1px; }
+
+ul.sidebar-nav ul.sub-nav > li > .accordion-toggle.menu-open + ul.sub-nav {
+  display: block; }
+
+ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li a {
+  padding: 7px 10px 9px 22px; }
+
+/* Third Level Nav Sub-Menu */
+ul.sidebar-nav ul.sub-nav > li > ul.sub-nav {
+  background: #f2f2f2; }
+
+/* Fourth Level Nav Sub-Menu */
+ul.sidebar-nav ul.sub-nav > li > ul.sub-nav > li > ul.sub-nav {
+  background: #fafafa; }
+
+/* Fifth Level Nav Sub-Menu */
+ul.sidebar-nav ul.sub-nav > li > ul.sub-nav > li > ul.sub-nav > li > ul.sub-nav {
+  background: #f2f2f2; }
+
+/* SIDEBAR OPEN STATE */
+/* Sidebar Fixed Settings */
+body.sidebar-persist #sidebar.affix > #sidebar-menu,
+body.sidebar-persist #sidebar.affix > #sidebar-search.hidden + #sidebar-menu {
+  overflow: auto; }
+
+/* Primary Content */
+body.sidebar-persist #content {
+  left: 190px;
+  margin-left: 40px;
+  position: relative;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out; }
+
+body.sidebar-persist #content:after {
+  left: 190px;
+  margin-left: 40px; }
+
+/* Sidebar Column */
+body.sidebar-persist #sidebar {
+  width: 230px;
+  -webkit-transition: width .1s ease-out;
+  transition: width .1s ease-out; }
+
+body.sidebar-persist #sidebar:before {
+  width: 230px;
+  -webkit-transition: width .1s ease-out;
+  transition: width .1s ease-out; }
+
+/* Sidebar Search Form */
+body.sidebar-persist #sidebar-search form {
+  width: 165px;
+  display: block; }
+
+/* Sidebar Collapse Toggle Button */
+body.sidebar-persist .sidebar-toggle {
+  margin-right: 0px; }
+
+/* Side Nav Icon */
+body.sidebar-persist ul.sidebar-nav > li > a .glyphicons {
+  border-right: 1px solid #c9c9c9; }
+
+/* Side Nav Title */
+body.sidebar-persist ul.sidebar-nav > li > a .sidebar-title {
+  display: block;
+  top: -1px;
+  text-indent: 20px;
+  height: 46px;
+  background: transparent;
+  border-color: transparent; }
+
+/* Side Nav Sub-menu */
+body.sidebar-persist ul.sidebar-nav ul.sub-nav {
+  display: none;
+  width: auto;
+  position: relative;
+  left: 0;
+  border: 0;
+  background-color: #fafafa; }
+
+body.sidebar-persist ul.sidebar-nav > li > ul.sub-nav {
+  border-bottom: 1px solid #c9c9c9; }
+
+body.sidebar-persist ul.sidebar-nav li:hover ul {
+  display: none; }
+
+body.sidebar-persist .accordion-toggle.menu-open + .sub-nav {
+  display: block; }
+
+body.sidebar-persist ul.sidebar-nav ul.sub-nav > li > a,
+body.sidebar-persist ul.sidebar-nav ul.sub-nav > li:last-child a,
+body.sidebar-persist ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li:last-child a {
+  padding-left: 35px; }
+
+/* Side Nav Caret */
+body.sidebar-persist ul.sidebar-nav > li > a span.caret {
+  display: block; }
+
+/* Multi Level Nav Sub-Menu */
+body.sidebar-persist ul.sidebar-nav ul.sub-nav > li > ul.sub-nav {
+  left: 0px; }
+
+/* SIDEBAR STATE ON LARGE RESOLUTIONS */
+@media (min-width: 1200px) {
+  /* Sidebar Fixed Settings */
+  #sidebar.affix > #sidebar-menu,
+  #sidebar.affix > #sidebar-search.hidden + #sidebar-menu {
+    overflow-x: auto; }
+
+  body.sidebar-collapsed #sidebar.affix > #sidebar-menu,
+  body.sidebar-collapsed #sidebar.affix > #sidebar-search.hidden + #sidebar-menu {
+    overflow: visible; }
+
+  /* Primary Content */
+  #content {
+    margin-left: 200px; }
+
+  #content:after {
+    margin-left: 40px;
+    left: 160px; }
+
+  #content > .container {
+    padding: 25px 30px 50px 30px; }
+
+  /* Sidebar Column */
+  #sidebar {
+    width: 200px; }
+
+  #sidebar:before {
+    width: 200px; }
+
+  /* Sidebar Search Form */
+  #sidebar-search form {
+    max-width: 140px;
+    display: block; }
+
+  /* Sidebar Collapse Toggle Button */
+  .sidebar-toggle {
+    margin-right: 0; }
+
+  ul.sidebar-nav > li > a .glyphicons {
+    border-right: 1px solid #c9c9c9; }
+
+  /* Side Nav Title */
+  ul.sidebar-nav > li > a .sidebar-title {
+    display: block;
+    top: -1px;
+    text-indent: 20px;
+    height: 46px;
+    background: transparent;
+    border-color: transparent;
+    width: 160px; }
+
+  /* Sub-menu */
+  ul.sidebar-nav ul.sub-nav {
+    display: none;
+    width: auto;
+    position: relative;
+    left: 0;
+    border: 0;
+    background-color: #fafafa; }
+
+  ul.sidebar-nav > li > ul.sub-nav {
+    border-bottom: 1px solid #c9c9c9; }
+
+  ul.sidebar-nav li:hover ul {
+    display: none; }
+
+  .accordion-toggle.menu-open + .sub-nav {
+    display: block; }
+
+  ul.sidebar-nav ul.sub-nav > li > a,
+  ul.sidebar-nav ul.sub-nav > li:last-child a {
+    padding-left: 25px; }
+
+  /* Side Nav Caret */
+  ul.sidebar-nav > li > a span.caret {
+    display: block; }
+
+  /* Multi Level Menu Items */
+  ul.sidebar-nav ul.sub-nav > li > ul.sub-nav {
+    left: 0px; }
+
+  ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li a,
+  ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li:last-child a {
+    padding-left: 26px; }
+
+  /* COLLAPSED STATE AT 1200 RESOLUTIONS */
+  body.sidebar-collapsed ul.sidebar-nav > li > a .glyphicons {
+    border-right: 0; } }
+@media (min-width: 1450px) {
+  #content {
+    margin-left: 240px; }
+
+  #content:after {
+    margin-left: 40px;
+    left: 200px; }
+
+  #content > .container {
+    padding: 35px 35px 50px 45px; }
+
+  #sidebar {
+    width: 240px; }
+
+  ul.sidebar-nav > li > a .sidebar-title {
+    width: 190px; }
+
+  #sidebar:before {
+    width: 240px; }
+
+  #sidebar-search form {
+    max-width: 175px; }
+
+  /* Sub Menu Level Items */
+  ul.sidebar-nav ul.sub-nav > li > a,
+  ul.sidebar-nav ul.sub-nav > li:last-child a {
+    padding-left: 35px; }
+
+  /* Multi Level Menu Items */
+  ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li a,
+  ul.sidebar-nav ul.sub-nav > li > ul.sub-nav li:last-child a {
+    padding-left: 36px; } }
+/*========================================================
+  D. Dashboard.html
+----------------------------------------------------------
+  The frontpage console buttons are fluid which makes
+  them an asthetic challenge because they contain text
+  So we hide the search bar by default and only show it
+  on extra large screens (typical desktops 1368px and up)
+========================================================== */
+#console-btns #console-search-btn {
+  display: none; }
+
+@media (min-width: 1368px) {
+  #console-btns .row > div {
+    width: 16.666666666666664%; }
+
+  #console-btns #console-search-btn {
+    display: block;
+    width: 33.33333333333333%; } }

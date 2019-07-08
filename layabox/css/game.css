@@ -1,0 +1,38 @@
+/*导航栏样式*/
+#head>li:nth-child(3){
+    color: #fff;
+    background-color: #080808;
+}
+
+#lieren{
+    padding-top: 35px;
+    padding-bottom: 80px;
+}
+#lieren .lieren-img{
+    margin-bottom: 25px;
+}
+#lieren h3{
+    font-size: 30px;
+    font-family: '微软雅黑';
+}
+#lieren p{
+    font-size: 12px;
+    font-family: '微软雅黑';
+    font-weight: 100;
+    line-height: 25px;
+    text-align: right;
+}
+#lieren .come-on p{
+    text-align: left;
+}
+#case{
+    padding-bottom: 60px;
+}
+#case h3{
+    font-size: 36px;
+    font-family: '微软雅黑';
+    padding-bottom: 20px;
+}
+#case p{
+    margin-bottom: 20px;
+}

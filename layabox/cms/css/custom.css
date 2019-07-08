@@ -1,0 +1,19 @@
+.navbar {
+  border-bottom: 1px solid transparent; }
+
+.header-btns > div > button:focus {
+  color: #666; }
+
+.header-btns > div > button:hover {
+  color: #0094d2; }
+
+ .header-btns .user {margin-right: 20px;}
+
+ #docs-content {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    min-height: 500px;
+    padding: 25px;
+}
+
+#content .row{margin: 0;}
