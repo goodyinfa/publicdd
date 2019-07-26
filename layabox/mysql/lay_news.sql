@@ -1,0 +1,5 @@
+INSERT INTO `lay_news` VALUES (1, '', 'Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了\r\n                        HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。', '技术突破：HTML5裸跑性能已可媲美APP', 1, NULL, '2016-02-25 17:30:36');
+INSERT INTO `lay_news` VALUES (2, '', 'Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了\r\n                        HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。', '技术突破：HTML5裸跑性能已可媲美APP', 1, NULL, '2016-02-25 17:30:36');
+INSERT INTO `lay_news` VALUES (3, '', 'Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了\r\n                        HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。', '技术突破：HTML5裸跑性能已可媲美APP', 1, NULL, '2016-02-25 17:30:36');
+INSERT INTO `lay_news` VALUES (4, '', 'Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了\r\n                        HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。', '技术突破：HTML5裸跑性能已可媲美APP', 1, NULL, '2016-02-25 17:30:36');
+INSERT INTO `lay_news` VALUES (5, '', 'Layabox计划在3月限量内测的LayaAir引擎，通过在低端机型上的性能实测以及即将上线的大型裸跑游戏，证明了\r\n                        HTML5裸跑性能已可媲美APP，性能问题将不再成为制约产业发展的瓶颈。', '技术突破：HTML5裸跑性能已可媲美APP', 1, NULL, '2016-02-25 17:30:36');

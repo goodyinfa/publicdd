@@ -1,0 +1,12 @@
+INSERT INTO `lay_partner` VALUES (1, './images/http-1.png', 'https://qzone.qq.com/');
+INSERT INTO `lay_partner` VALUES (2, './images/http-2.png', 'https://browser.qq.com/mac/');
+INSERT INTO `lay_partner` VALUES (3, './images/http-3.png', 'www.baidu.com');
+INSERT INTO `lay_partner` VALUES (4, './images/http-4.png', 'https://www.sina.com.cn/');
+INSERT INTO `lay_partner` VALUES (5, './images/http-5.png', 'http://dict.youdao.com/w/eng/%E7%81%AB%E9%80%9F%E7%A7%BB%E5%8A%A8/');
+INSERT INTO `lay_partner` VALUES (6, './images/http-6.png', 'https://www.liebao.cn/');
+INSERT INTO `lay_partner` VALUES (7, './images/http-7.png', 'http://www.aiyx999.com/');
+INSERT INTO `lay_partner` VALUES (8, './images/http-8.png', 'http://xiao.wo.com.cn/');
+INSERT INTO `lay_partner` VALUES (9, './images/http-9.png', 'http://www.migu.cn/');
+INSERT INTO `lay_partner` VALUES (10, './images/http-10.png', 'http://xiuxiu.web.meitu.com/');
+INSERT INTO `lay_partner` VALUES (11, './images/http-11.png', 'http://wan.yy.com/');
+INSERT INTO `lay_partner` VALUES (12, './images/http-12.png', 'http://www.kuwo.cn/');

@@ -81,9 +81,13 @@
                 <li>
                     <a href="admin.php"><span class="glyphicons glyphicon-user"></span><span class="sidebar-title">管理员</span></a>
                 </li>
-<!--                <li>-->
-<!--                    <a href="case_list.php"><span class="glyphicons glyphicon-paperclip"></span><span class="sidebar-title">案例管理</span></a>-->
-<!--                </li>-->
+                <li><a href="" class="accordion-toggle menu-open">科技
+                        <span class="glyphicons glyphicon-record"></span><span class="caret"></span></a>
+                    <ul class="nav sub-nav" id="sideEight-sub" style="">
+                        <li><a href="article_list.html"><span class="glyphicons glyphicon-minus"></span>互联网</a>
+                        </li>
+                    </ul>
+                </li>
 <!--                <li>-->
 <!--                    <a href="category_list.php"><span class="glyphicons glyphicon-credit-card"></span><span class="sidebar-title">分类</span></a>-->
 <!--                </li>-->
