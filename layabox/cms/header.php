@@ -72,8 +72,13 @@
                 <li>
                     <a href="lay_product.php"><span class="glyphicons glyphicon-star"></span><span class="sidebar-title">Laya产品</span></a>
                 </li>
-                <li>
-                    <a href="#"><span class="glyphicons glyphicon-credit-card"></span><span class="sidebar-title">产品详情</span></a>
+                <li> <a href="#sideEight" class="accordion-toggle"><span class="glyphicons glyphicon-list"></span><span class="sidebar-title">产品详情</span><span class="caret"></span></a>
+                    <ul class="nav sub-nav" id="sideEight" style="">
+                        <!--                        <li><a href="#"><span class="glyphicons glyphicon-record"></span>科技<span class="caret"></span></a></li>-->
+                        <!--                        sideEight-sub class="accordion-toggle menu-open"-->
+                        <li><a href="function_list.php"><span class="glyphicons glyphicon-record"></span> 功能</a></li>
+                        <li><a href="other_list.php"><span class="glyphicons glyphicon-record"></span> 其他</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="lay_game.php"><span class="glyphicons glyphicon-send"></span><span class="sidebar-title">游戏管理</span></a>
@@ -81,11 +86,13 @@
                 <li>
                     <a href="game_detail.php"><span class="glyphicons glyphicon-credit-card"></span><span class="sidebar-title">游戏详情</span></a>
                 </li>
-                <li class="dropdown">
-                    <a href="#">
-                        <span class="glyphicons glyphicon-file"></span>
-                        <span class="sidebar-title">招聘管理</span>
-                    </a>
+                <li> <a href="#sideEight" class="accordion-toggle"><span class="glyphicons glyphicon-list"></span><span class="sidebar-title">招聘管理</span><span class="caret"></span></a>
+                    <ul class="nav sub-nav" id="sideEight" style="">
+<!--                        <li><a href="#"><span class="glyphicons glyphicon-record"></span>科技<span class="caret"></span></a></li>-->
+<!--                        sideEight-sub class="accordion-toggle menu-open"-->
+                        <li><a href="desc_list.php"><span class="glyphicons glyphicon-record"></span>职位描述</a></li>
+                        <li><a href="request_list.php"><span class="glyphicons glyphicon-record"></span>任职要求</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="category_job.php"><span class="glyphicons glyphicon-credit-card"></span><span class="sidebar-title">招聘分类</span></a>
@@ -93,20 +100,7 @@
                 <li>
                     <a href="admin.php"><span class="glyphicons glyphicon-user"></span><span class="sidebar-title">管理员</span></a>
                 </li>
-                <li> <a href="#sideEight" class="accordion-toggle"><span class="glyphicons glyphicon-list"></span><span class="sidebar-title">文章管理</span><span class="caret"></span></a>
-                    <ul class="nav sub-nav" id="sideEight" style="">
-                        <li><a href="#sideEight-sub" class="accordion-toggle menu-open"><span class="glyphicons glyphicon-record"></span>科技<span class="caret"></span></a>
-                            <ul class="nav sub-nav" id="sideEight-sub" style="">
-                                <li><a href="article_list.html"><span class="glyphicons glyphicon-minus"></span> 互联网</a></li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span> 数码</a></li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span> IT</a></li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span> 电信</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="glyphicons glyphicon-record"></span> 文化</a></li>
-                        <li><a href="#"><span class="glyphicons glyphicon-record"></span> 生活</a></li>
-                    </ul>
-                </li>
+
 <!--                <li>-->
 <!--                    <a href="category_list.php"><span class="glyphicons glyphicon-credit-card"></span><span class="sidebar-title">分类</span></a>-->
 <!--                </li>-->
