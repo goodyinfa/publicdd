@@ -106,7 +106,7 @@
 <script type="text/javascript">
     var imgcode = document.getElementById('code');
     imgcode.onclick = function () {
-        this.src = 'include/logincode.php?p='+Math.random();
+        this.src = 'includes/logincode.php?p='+Math.random();
     }
 </script>
 </html>

@@ -10,7 +10,6 @@
         $str = substr($str,0,$len);//截取
 
         return $str;
-
     }
 
     function img_code(){
