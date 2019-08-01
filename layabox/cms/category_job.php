@@ -62,7 +62,7 @@
                     <div class="panel">
                         <div class="panel-heading">
                             <div class="panel-title">分类</div>
-                            <a href="catejob_add.php" class="btn btn-info btn-gradient pull-right"><span class="glyphicons glyphicon-plus"></span> 添加分类</a>
+                            <a href="job_add.php" class="btn btn-info btn-gradient pull-right"><span class="glyphicons glyphicon-plus"></span> 添加招聘</a>
                         </div>
                         <form action="" method="post">
                             <div class="panel-body">
@@ -85,7 +85,7 @@
                                             <td><?php echo $item['job_show']==1?'是':'否'; ?></td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a href="catejob_edit.php?id=<?php echo $item['job_id']; ?>" class="btn btn-default btn-gradient"><span class="glyphicons glyphicon-pencil"></span></a>
+                                                    <a href="job_edit.php?id=<?php echo $item['job_id']; ?>" class="btn btn-default btn-gradient"><span class="glyphicons glyphicon-pencil"></span></a>
                                                     <a onclick="return confirm('确定要删除吗？');" href="?id=<?php echo $item['job_id']; ?>" class="btn btn-default btn-gradient dropdown-toggle"><span class="glyphicons glyphicon-trash"></span></a>
                                                 </div>
                                             </td>

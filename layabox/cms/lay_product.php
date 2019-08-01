@@ -74,7 +74,6 @@ if (isset($_POST['commit'])){
                                     <th>缩略图</th>
                                     <th>是否展示</th>
                                     <th>产品描述</th>
-                                    <th>产品详情</th>
                                     <th width="200">操作</th>
                                 </tr>
                                 <?php foreach ($res_pro as $item){ ?>
@@ -84,7 +83,6 @@ if (isset($_POST['commit'])){
                                         <td><img src="<?php echo $item['pro_thumb']; ?>" alt=""></td>
                                         <td><?php echo $item['pro_show']==1?'是':'否'; ?></td>
                                         <td><?php echo $item['pro_desc']; ?></td>
-                                        <td><?php echo $item['pro_det_id']; ?></td>
                                         <td>
                                             <div class="btn-group">
                                                 <a href="product_edit.php?id=<?php echo $item['pro_id']; ?>" class="btn btn-default btn-gradient"><span class="glyphicons glyphicon-pencil"></span></a>

@@ -62,7 +62,7 @@ if (isset($_POST['commit'])){
                 <div class="panel">
                     <div class="panel-heading">
                         <div class="panel-title">分类</div>
-                        <a href="game_add.php" class="btn btn-info btn-gradient pull-right"><span class="glyphicons glyphicon-plus"></span> 添加分类</a>
+                        <a href="game_add.php" class="btn btn-info btn-gradient pull-right"><span class="glyphicons glyphicon-plus"></span> 添加游戏</a>
                     </div>
                     <form action="" method="post">
                         <div class="panel-body">

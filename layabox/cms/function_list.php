@@ -80,7 +80,7 @@ if (isset($_POST['commit'])){
                                 </tr>
                                 <?php foreach ($res_func as $item){ ?>
                                 <tr class="success">
-                                    <td class="text-center"><input type="checkbox" value="1" name="idarr[]" class="cbox"></td>
+                                    <td class="text-center"><input type="checkbox" value="<?php echo $item['func_id']; ?>" name="idarr[]" class="cbox"></td>
                                     <td><?php echo $item['func_title']; ?></td>
                                     <td><?php echo $item['func_content']; ?></td>
                                     <td><?php echo $item['func_class']; ?></td>

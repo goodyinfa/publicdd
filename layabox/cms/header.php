@@ -51,7 +51,7 @@
             <div class="navbar-logo"><img src="images/logo.png" alt="logo"></div>
         </a> </div>
     <div class="pull-right header-btns">
-        <a class="user"><span class="glyphicons glyphicon-user"></span> admin</a>
+        <a class="user"><span class="glyphicons glyphicon-user"></span><?php echo $name; ?></a>
         <a href="login.php" class="btn btn-default btn-gradient" type="button"><span class="glyphicons glyphicon-log-out"></span> 退出</a>
     </div>
 </header>

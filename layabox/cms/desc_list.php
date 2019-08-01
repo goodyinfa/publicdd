@@ -80,7 +80,7 @@ if (isset($_POST['commit'])){
                                 </tr>
                                 <?php foreach ($res_desc as $item){ ?>
                                 <tr class="success">
-                                    <td class="text-center"><input type="checkbox" value="1" name="idarr[]" class="cbox"></td>
+                                    <td class="text-center"><input type="checkbox" value="<?php echo $item['job_desc_id']; ?>" name="idarr[]" class="cbox"></td>
                                     <td><?php echo $item['job_title'] ?></td>
                                     <td><?php echo $item['job_desc1'] ?></td>
                                     <td><?php echo $item['job_desc2'] ?></td>
