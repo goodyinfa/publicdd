@@ -1,11 +1,9 @@
 <?php
     require_once 'include/config.php';
 //    人才招聘
-    $sql_job = "SELECT * FROM lay_jobdesc AS jd 
-    RIGHT JOIN lay_job AS Job ON jd.job_desc_id=job.job_id 
-    LEFT JOIN lay_jobquestion AS jb ON job.job_id=jb.job_question_id";
+    $sql_job = "SELECT * FROM lay_jobdesc AS jd RIGHT JOIN lay_job AS job ON jd.job_desc_id=job.job_id LEFT JOIN lay_jobquestion AS jb ON job.job_id=jb.job_question_id";
     $res = get_all($sql_job);
-//    p($res);
+//    p($sql_job);
 //  联系方式
     $sql_contact = "SELECT * FROM lay_contact";
     $res_contact = get_all($sql_contact);
@@ -76,21 +74,21 @@
             <?php foreach ($res as $item){ ?>
             <div class="row">
                 <div class="mar col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
-                    <h3><?php echo $item['job_title'] ?></h3>
+                    <h3><?php echo $item['job_title']; ?></h3>
                     <dl>
                         <dt>职业描述</dt>
-                        <dd><?php echo $item['job_desc1'] ?></dd>
-                        <dd><?php echo $item['job_desc2'] ?></dd>
-                        <dd><?php echo $item['job_desc3'] ?></dd>
-                        <dd><?php echo $item['job_desc4'] ?></dd>
+                        <dd><?php echo $item['job_desc1']; ?></dd>
+                        <dd><?php echo $item['job_desc2']; ?></dd>
+                        <dd><?php echo $item['job_desc3']; ?></dd>
+                        <dd><?php echo $item['job_desc4']; ?></dd>
                     </dl>
                     <dl>
                         <dt>任职要求</dt>
-                        <dd><?php echo $item['job_question1'] ?></dd>
-                        <dd><?php echo $item['job_question2'] ?></dd>
-                        <dd><?php echo $item['job_question3'] ?></dd>
-                        <dd><?php echo $item['job_question4'] ?></dd>
-                        <dd><?php echo $item['job_question5'] ?></dd>
+                        <dd><?php echo $item['job_question1']; ?></dd>
+                        <dd><?php echo $item['job_question2']; ?></dd>
+                        <dd><?php echo $item['job_question3']; ?></dd>
+                        <dd><?php echo $item['job_question4']; ?></dd>
+                        <dd><?php echo $item['job_question5']; ?></dd>
                     </dl>
                 </div>
             </div>
