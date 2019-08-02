@@ -66,13 +66,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-xs-10 col-xs-offset-2 col-sm-offset-0">
-                    <a name="<?php echo $res_pro[5]['pro_title']; ?>"></a>
-                    <div class="number pull-left"><?php echo $res_pro[5]['pro_det_id']; ?></div>
-                    <h2 class="pull-left"><?php echo $res_pro[5]['pro_title']; ?></h2>
+                    <a name="<?php echo $res_pro[2]['pro_title']; ?>"></a>
+                    <div class="number pull-left"><?php echo $res_pro[2]['pro_det_id']; ?></div>
+                    <h2 class="pull-left"><?php echo $res_pro[2]['pro_title']; ?></h2>
                     <div class="clearfix"></div>
-                    <p><?php echo $res_pro[5]['pro_det_desc']; ?></p>
+                    <p><?php echo $res_pro[2]['pro_det_desc']; ?></p>
                     <?php foreach ($res_fun as $item){ ?>
-                        <?php if ($item['pro_id'] == $res_pro[5]['pro_id']){ ?>
+                        <?php if ($item['pro_id'] == $res_pro[2]['pro_id']){ ?>
                         <div class="big">
                             <h3><?php echo $item['func_title']; ?></h3>
                             <p>
@@ -81,7 +81,7 @@
                         </div>
                         <?php } ?>
                     <?php } ?>
-                    <img src="<?php echo $res_pro[5]['pro_det_img']; ?>" alt="" class="center-block">
+                    <img src="<?php echo $res_pro[2]['pro_det_img']; ?>" alt="" class="center-block">
                 </div>
                 <div class="open col-lg-5 col-md-5 col-sm-5 col-xs-10 col-xs-offset-2 col-sm-offset-0">
                     <a name="<?php echo $res_pro[3]['pro_title']; ?>"></a>
